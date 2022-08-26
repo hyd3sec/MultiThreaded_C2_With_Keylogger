@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+    {% block content %}
+    <br>
+        <h1 class="title is-4">List of agents are:</h1>
+
+        {% for i in threads %}
+        <h2> {{ i.name }} </h2>
+        <h2>{{ ips[threads.index(i)] }}</h2>
+        
+
+        <a href="http://127.0.0.1:5000/{{i.name}}/executecmd">Execute</a>
+
+        {% endfor %}
+    
+    {% endblock %}

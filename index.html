@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar is-black has-shadow is-size-5 ">
+            <div class="navbar-menu ">
+
+                <div class="navbar-start" id="nav-links">
+                    <a href="{{ url_for('home') }}" class="navbar-item">Home</a>
+                    <a href="{{ url_for('agents') }}" class="navbar-item">Agents</a>
+                </div>
+            </div>"
+        </nav>
+
+        {% block content %}
+
+
+        <br>
+        <h1 class="title is-2 has-text-centered">your C2 server is running...</h1>
+
+        {% endblock %}
+    </body>
+</html>
